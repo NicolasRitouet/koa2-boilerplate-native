@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Boilerplate for Koa2 using native async/await with node 7",
   "main": "index.js",
+  "repository": "NicolasRitouet/koa2-boilerplate-native",
+  "engines" : { "node" : ">=7" },
   "scripts": {
     "start": "node --harmony-async-await index.js",
     "watch": "nodemon --harmony-async-await index.js",
