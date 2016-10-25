@@ -1,24 +1,24 @@
 # koa2 boilerplate (native async/await flavor)
 
-> Yet another koa2 boilerplate with native async/await using node 7 (nightly build at the moment)
+> Yet another koa2 boilerplate with native async/await using node 7
 
 :warning: async/await is still experimental, available under `harmony-async-await` flag.
 
 ## Prerequisites
 
-Async/await is available under the harmony flag with **node 7**.  
+Async/await is only available under the harmony flag with **node 7**.  
 This allows us to run koa2 without babel.
 
 ### Install node 7 using nvm
 ```
-NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/test
 nvm install 7
 ```
 
 ### Manual installation using binary
-[Download](https://nodejs.org/download/test/) latest binary of node 7.
+[Download](https://nodejs.org/en/) latest binary of node 7.
 
-Node 7 should be released [on the 25th of October](https://github.com/nodejs/node/issues/7904).
+<del>Node 7 should be released [on the 25th of October](https://github.com/nodejs/node/issues/7904).</del>
+Node 7 has been released :tada:
 
 ## Getting Started
 
@@ -26,18 +26,17 @@ Node 7 should be released [on the 25th of October](https://github.com/nodejs/nod
 git clone git@github.com:NicolasRitouet/koa2-boilerplate-native.git my_project_name
 cd my_project_name
 rm -rf .git
+yarn                       # Install project dependencies (aka npm install)
+yarn start                 # Launch (aka npm start)
 ```
 
 ## Usage
-### Starting the server
 
-`npm start`   
-or manually   
-`node --harmony-async-await index.js`
-
-### Starting the server for development
-
-`npm run watch`
+|`yarn/npm run <script>`|Description|
+|------------------|-----------|
+|`start`|Serves your app at `localhost:3000`. Change port with `NODE_ENV=4000 npm start`|
+|`build`|Compiles the application to disk (`/dist` by default).|
+|`watch`|Same as `yarn start`, but enables nodemon for the server as well.|
 
 
 ## Koa2 boilerplate alternatives (Acknowledgments)
