@@ -11,3 +11,18 @@ describe('Hello World', () => {
       .expect('Hello World', done);
   });
 });
+
+describe('users', () => {
+  it('should insert a new user', (done) => {
+    request
+      .post('/users')
+      .field('username', 'Nicolas')
+      .expect(200, done);
+  });
+
+  it('should retrieve a user', (done) => {
+    request
+      .get('/users/1')
+      .expect(200, done);
+  });
+});
