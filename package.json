@@ -2,23 +2,31 @@
   "name": "koa2-boilerplate-native",
   "version": "1.0.0",
   "description": "Boilerplate for Koa2 using native async/await with node 7",
-  "main": "index.js",
-  "repository": "NicolasRitouet/koa2-boilerplate-native",
-  "engines" : { "node" : ">=7" },
-  "scripts": {
-    "start": "node --harmony-async-await index.js",
-    "watch": "nodemon --harmony-async-await index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Nicolas Ritouet <nicolas@ritouet.com>",
   "license": "MIT",
+  "repository": "NicolasRitouet/koa2-boilerplate-native",
+  "engines": {
+    "node": ">=7"
+  },
+  "scripts": {
+    "start": "node --harmony-async-await src/index.js",
+    "watch": "nodemon --harmony-async-await src/index.js",
+    "test": "mocha --harmony-async-await --reporter spec test/*.js",
+    "db:migration": "node --harmony-async-await src/db/db.schema.js"
+  },
   "dependencies": {
+    "knex": "^0.12.6",
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.2.0",
     "koa-logger": "^2.0.0",
-    "koa-router": "^7.0.1"
+    "koa-router": "^7.0.1",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "should": "^11.1.1",
+    "sqlite3": "^3.1.8",
+    "supertest": "^2.0.1"
   }
 }

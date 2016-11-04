@@ -2,6 +2,7 @@
 const Koa = require('koa');
 const bodyparser = require('koa-bodyparser');
 const logger = require('koa-logger');
+const db = require('./db');
 
 // Internal modules
 const routes = require('./routes');
@@ -15,10 +16,10 @@ app.use(logger())
   .use(bodyparser());
 
 // Add routes
-app.use(routes.baseRoutes.routes())
-  .use(routes.baseRoutes.allowedMethods())
-  .use(routes.secondRoutes.routes())
-  .use(routes.secondRoutes.allowedMethods());
+app.use(routes.base.routes())
+  .use(routes.base.allowedMethods())
+  .use(routes.users.routes())
+  .use(routes.users.allowedMethods());
 
 // Start server
 app.listen(config.port, () => console.log(`Server started ${ config.port }`));

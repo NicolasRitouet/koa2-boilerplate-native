@@ -1,7 +1,13 @@
 const config = {
 	dev: {
 		environment: 'dev',
-		port: process.env.PORT || 3000
+		port: process.env.PORT || 3000,
+    db: {
+      client: 'sqlite3',
+      connection: {
+        filename: '../data.db'
+      }
+    }
 	},
 	staging: {
 		environment: 'staging',

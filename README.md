@@ -4,6 +4,10 @@
 
 :warning: async/await is still experimental, available under `harmony-async-await` flag.
 
+## Features
+- knex
+- koa-routeur
+
 ## Prerequisites
 
 Async/await is only available under the harmony flag with **node 7**.  
@@ -35,8 +39,10 @@ yarn start                 # Launch (aka npm start)
 |`yarn/npm run <script>`|Description|
 |------------------|-----------|
 |`start`|Serves your app at `localhost:3000`. Change port with `NODE_ENV=4000 npm start`|
+|`test`|Run the test using mocha|
 |`build`|Compiles the application to disk (`/dist` by default).|
 |`watch`|Same as `yarn start`, but enables nodemon for the server as well.|
+|`db:migration`|Create the DB schema.|
 
 
 ## Koa2 boilerplate alternatives (Acknowledgments)
@@ -44,9 +50,6 @@ yarn start                 # Launch (aka npm start)
 - [koa2-api-boilerplate](https://github.com/adrianObel/koa2-api-boilerplate): full boilerplate with koa2 and mongodb
 - [koa2-skeleton](https://github.com/saadq/koa2-skeleton)
 
-
-## TODO
-- add tests & CI
 
 ## License
 
