@@ -1,10 +1,10 @@
 // External dependencies
 const Koa = require('koa');
-const bodyparser = require('koa-bodyparser');
 const logger = require('koa-logger');
-const db = require('./db');
+const bodyparser = require('koa-bodyparser');
 
 // Internal modules
+const db = require('./db');
 const routes = require('./routes');
 const config = require('./config')();
 
