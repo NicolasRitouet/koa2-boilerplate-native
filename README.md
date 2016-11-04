@@ -1,5 +1,7 @@
 # koa2 boilerplate (native async/await flavor)
 
+[![Build Status](https://travis-ci.org/NicolasRitouet/koa2-boilerplate-native.svg?branch=master)](https://travis-ci.org/NicolasRitouet/koa2-boilerplate-native)
+
 > Yet another koa2 boilerplate with native async/await using node 7
 
 :warning: async/await is still experimental, available under `harmony-async-await` flag.
