@@ -12,7 +12,7 @@ describe('Hello World', () => {
   });
 });
 
-describe('users', () => {
+describe('/users endpoint', () => {
   it('should insert a new user', (done) => {
     request
       .post('/users')

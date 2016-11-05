@@ -41,9 +41,9 @@ yarn start                 # Launch (aka npm start)
 |`yarn/npm run <script>`|Description|
 |------------------|-----------|
 |`start`|Serves your app at `localhost:3000`. Change port with `NODE_ENV=4000 npm start`|
-|`test`|Run the test using mocha|
-|`build`|Compiles the application to disk (`/dist` by default).|
+|`test`|Run the test using mocha and supertest.|
 |`watch`|Same as `yarn start`, but enables nodemon for the server as well.|
+|`dev`|Watch the app with nodejs-dashboard in the terminal.|
 |`db:migration`|Create the DB schema.|
 
 

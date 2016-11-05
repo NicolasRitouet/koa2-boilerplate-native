@@ -11,6 +11,7 @@
   "scripts": {
     "start": "node --harmony-async-await src/index.js",
     "watch": "nodemon --harmony-async-await src/index.js",
+    "dev": "nodejs-dashboard -- nodemon --harmony-async-await -r nodejs-dashboard src/index.js",
     "test": "mocha --harmony-async-await --reporter spec test/*.js",
     "db:migration": "node --harmony-async-await src/db/db.schema.js"
   },
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "mocha": "^3.1.2",
+    "nodejs-dashboard": "^0.1.2",
     "nodemon": "^1.11.0",
     "should": "^11.1.1",
     "sqlite3": "^3.1.8",
