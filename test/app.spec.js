@@ -25,4 +25,10 @@ describe('/users endpoint', () => {
       .get('/users/1')
       .expect(200, done);
   });
+
+  it('should return a 404', (done) => {
+    request
+      .get('/users/123456789')
+      .expect(404, done);
+  });
 });

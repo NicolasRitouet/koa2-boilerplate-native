@@ -12,12 +12,12 @@ router.post('/users', async (ctx) => {
   ctx.body = userid;
 });
 
-router.get('/users/:username', async (ctx) => {
-  const username = ctx.params.username;
-  const user = await db('users').select().where('username', username);
+router.get('/users/:id', async (ctx) => {
+  const userId = ctx.params.id;
+  const user = await db('users').select().where('id', userId);
   if (!user || user.length < 1) {
     ctx.status = 404;
-    return ctx.body = `user with id ${ username } not found`;
+    return ctx.body = `user with id ${ userId } not found`;
   }
   ctx.body = user;
 });
