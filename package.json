@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "mocha": "^3.1.2",
-    "nodejs-dashboard": "^0.1.2",
+    "nodejs-dashboard": "^0.2.1",
     "nodemon": "^1.11.0",
     "should": "^11.1.1",
     "sqlite3": "^3.1.8",
