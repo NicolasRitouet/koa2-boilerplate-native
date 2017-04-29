@@ -16,7 +16,7 @@
     "db:migration": "node --harmony-async-await src/db/db.schema.js"
   },
   "dependencies": {
-    "knex": "^0.12.6",
+    "knex": "^0.13.0",
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.2.0",
     "koa-logger": "^2.0.0",
