@@ -27,7 +27,7 @@
     "mocha": "^3.1.2",
     "nodejs-dashboard": "^0.3.0",
     "nodemon": "^1.11.0",
-    "should": "^11.1.1",
+    "should": "^12.0.0",
     "sqlite3": "^3.1.8",
     "supertest": "^2.0.1"
   }
