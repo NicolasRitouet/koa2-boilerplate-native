@@ -2,9 +2,7 @@
 
 [![Build Status](https://travis-ci.org/NicolasRitouet/koa2-boilerplate-native.svg?branch=master)](https://travis-ci.org/NicolasRitouet/koa2-boilerplate-native)
 
-> Yet another koa2 boilerplate with native async/await using node 7
-
-:warning: async/await is still experimental, available under `harmony-async-await` flag.
+> Yet another koa2 boilerplate with native async/await using node 8
 
 ## Features
 - knex
@@ -12,19 +10,14 @@
 
 ## Prerequisites
 
-Async/await is only available under the harmony flag with **node 7**.  
-This allows us to run koa2 without babel.
-
-### Install node 7 using nvm
+### Install node 8 using nvm
 ```
-nvm install 7
+nvm install 8
 ```
 
 ### Manual installation using binary
-[Download](https://nodejs.org/en/) latest binary of node 7.
+[Download](https://nodejs.org/en/) latest binary of node 8.
 
-<del>Node 7 should be released [on the 25th of October](https://github.com/nodejs/node/issues/7904).</del>
-Node 7 has been released :tada:
 
 ## Getting Started
 
@@ -45,6 +38,7 @@ yarn start                 # Launch (aka npm start)
 |`watch`|Same as `yarn start`, but enables nodemon for the server as well.|
 |`dev`|Watch the app with nodejs-dashboard in the terminal.|
 |`db:migration`|Create the DB schema.|
+|`deploy`|Deploy on [now.sh](https://now.sh).|
 
 
 ## Koa2 boilerplate alternatives (Acknowledgments)

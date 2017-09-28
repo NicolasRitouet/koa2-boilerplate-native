@@ -1,5 +1,5 @@
 const config = {
-	dev: {
+	test: {
 		environment: 'dev',
 		port: process.env.PORT || 3000,
     db: {
@@ -19,4 +19,4 @@ const config = {
 	}
 };
 
-module.exports = (environment) => config[ environment || process.env.NODE_ENV || 'dev' ];
+module.exports = (environment) => config[ environment || process.env.NODE_ENV || 'test' ];

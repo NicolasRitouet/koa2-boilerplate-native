@@ -1,34 +1,34 @@
 {
   "name": "koa2-boilerplate-native",
   "version": "1.0.0",
-  "description": "Boilerplate for Koa2 using native async/await with node 7",
+  "description": "Boilerplate for Koa2 using native async/await",
   "author": "Nicolas Ritouet <nicolas@ritouet.com>",
   "license": "MIT",
   "repository": "NicolasRitouet/koa2-boilerplate-native",
   "engines": {
-    "node": ">=7"
+    "node": ">=8"
   },
   "scripts": {
-    "start": "node --harmony-async-await src/index.js",
-    "watch": "nodemon --harmony-async-await src/index.js",
-    "dev": "nodejs-dashboard -- nodemon --harmony-async-await -r nodejs-dashboard src/index.js",
-    "test": "mocha --harmony-async-await --reporter spec test/*.js",
-    "db:migration": "node --harmony-async-await src/db/db.schema.js"
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js",
+    "dev": "nodejs-dashboard -r nodejs-dashboard src/index.js",
+    "test": "jest --verbose --forceExit",
+    "deploy": "now",
+    "db:migration": "node src/db/db.schema.js"
   },
   "dependencies": {
-    "knex": "^0.12.6",
-    "koa": "^2.0.0",
-    "koa-bodyparser": "^3.2.0",
-    "koa-logger": "^2.0.0",
-    "koa-router": "^7.0.1",
-    "sqlite3": "^3.1.8"
+    "knex": "^0.13.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.2.1",
+    "now": "^8.3.8"
   },
   "devDependencies": {
-    "mocha": "^3.1.2",
-    "nodejs-dashboard": "^0.4.0",
-    "nodemon": "^1.11.0",
-    "should": "^11.1.1",
-    "sqlite3": "^3.1.8",
-    "supertest": "^2.0.1"
+    "jest": "^21.2.1",
+    "nodejs-dashboard": "^0.4.1",
+    "nodemon": "^1.12.1",
+    "sqlite3": "^3.1.12",
+    "supertest": "^3.0.0"
   }
 }
